@@ -14,9 +14,9 @@ public interface FormationProxy {
     public Formation getFormation(@PathVariable("id") Long idf);
 
     default Formation fallbackFormation(@PathVariable("id") Long idf, Throwable throwable) {
-        if (idf.equals(1L)) return new Formation();
-        else if (idf.equals(2L)) return new Formation();
-        return new Formation();
+        if (idf.equals(1L)) return new Formation(1L,"web",50);
+        else if (idf.equals(2L)) return new Formation(2L,"intergiciel",40);
+        return new Formation(3L,"Network",60);
     }
 }
 

@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
 @RestController @RequestMapping("api")
 public class Controller {
     @Autowired
@@ -22,5 +25,11 @@ public class Controller {
         Formation f1 = formationProxy.getFormation(e.getIdFormation());
         e.setFormation(f1);
         return e;
+    }
+
+    @GetMapping("/etudiant/all")
+    public List<Etudiant> getAllEtudiants() {
+        return etudiantRep.findAll();
+
     }
 }
