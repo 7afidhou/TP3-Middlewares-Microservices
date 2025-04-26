@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.msgroups</groupId>
-    <artifactId>ms-formation</artifactId>
+    <artifactId>ms-scolarite</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ms-formation</name>
-    <description>ms-formation</description>
+    <name>ms-scolarite</name>
+    <description>ms-scolarite</description>
     <url/>
     <licenses>
         <license/>
